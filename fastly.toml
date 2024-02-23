@@ -1,0 +1,17 @@
+# This file describes a Fastly Compute@Edge package. To learn more visit:
+# https://developer.fastly.com/reference/fastly-toml/
+
+authors = ["oscar.lingard@thehutgroup.com"]
+description = ""
+language = "rust"
+manifest_version = 3
+name = "entrypoint"
+service_id = ""
+
+[local_server]
+  [local_server.kv_stores]
+    routes_kv_link = [{key = "routes-1", path = "./local/routes-1.json"}, {key = "routes-2", path = "./local/routes-2.json"}]
+  [local_server.config_stores]
+    [local_server.config_stores.mapper_config_link]
+      file = "./local/routes-mapping.json"
+      format = "json"

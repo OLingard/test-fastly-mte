@@ -1,0 +1,32 @@
+{
+  "/statics": {
+    "host": "statics-dcef54611c2af726.s3.eu-west-2.amazonaws.com",
+    "preservePathPrefix": false,
+    "cacheObject": {
+      "header": [],
+      "cookie": []
+    },
+    "appendPathPrefix": "/foo",
+    "priority": 1
+  },
+  "/images": {
+    "host": "4e5bdc.thgimages.com",
+    "preservePathPrefix": false,
+    "cacheObject": {
+      "header": [],
+      "cookie": []
+    },
+    "appendPathPrefix": "/foo",
+    "priority": 2
+  },
+  "/": {
+    "host": "9b469840.cf-thgaltitude.com",
+    "preservePathPrefix": false,
+    "cacheObject": {
+      "header": [],
+      "cookie": []
+    },
+    "appendPathPrefix": "/foo",
+    "priority": 3
+  }
+}
